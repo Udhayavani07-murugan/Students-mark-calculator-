@@ -1,0 +1,43 @@
+Here’s a *C program* using *structure* to calculate total and average marks of a student:
+
+```c
+#include <stdio.h>
+
+struct Student {
+    char name[50];
+    int roll;
+    int marks1, marks2, marks3;
+    int total;
+    float average;
+};
+
+int main() {
+    struct Student s;
+
+    printf("Enter student name: ");
+    scanf("%s", s.name);
+
+    printf("Enter roll number: ");
+    scanf("%d", &s.roll);
+
+    printf("Enter marks in subject 1: ");
+    scanf("%d", &s.marks1);
+    printf("Enter marks in subject 2: ");
+    scanf("%d", &s.marks2);
+    printf("Enter marks in subject 3: ");
+    scanf("%d", &s.marks3);
+
+    s.total = s.marks1 + s.marks2 + s.marks3;
+    s.average = s.total / 3.0;
+
+    printf("\n--- Student Report ---\n");
+    printf("Name      : %s\n", s.name);
+    printf("Roll No   : %d\n", s.roll);
+    printf("Total     : %d\n", s.total);
+    printf("Average   : %.2f\n", s.average);
+
+    return 0;
+}
+```
+
+Let me know if you want it with *grade calculation* or for *multiple students*.
