@@ -1,6 +1,4 @@
-Here’s a *C program* using *structure* to calculate total and average marks of a student:
 
-```c
 #include <stdio.h>
 
 struct Student {
@@ -38,6 +36,3 @@ int main() {
 
     return 0;
 }
-```
-
-Let me know if you want it with *grade calculation* or for *multiple students*.
